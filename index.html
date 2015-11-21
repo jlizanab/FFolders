@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<HTML lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="http://localhost:8080/img/favicon.png?v=3" type="img/png"/>
+  <title>FFolders, Pure Css file folders</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/ffolders.min.css" rel="stylesheet">
+
+  <style type="text/css">
+  	@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+  	body{
+  		font-family: 'Lato', sans-serif;
+  	}
+  	h1{
+		font-size: 86px;
+	    color: #777;
+	    font-weight: 300;
+  	}
+  	h4{
+		font-size: 24px;
+		color: #777;
+		font-weight: 300;
+  	}
+  	p{
+  		font-size: 17px;
+  		color:#777;
+  	}
+
+  	.container.main{
+  		padding-top: 40px;
+  		padding-bottom: 40px;
+  	}
+
+  	.ffolder{
+  		margin:0 20px 24px 0;
+  	}
+  	
+  	span.version{
+		font-size: 15px;
+		font-weight: 400;
+  	}
+
+	.ffolder.demo span, .ffolder.demo2 span{
+		background-color: transparent;
+	}
+
+  	.ffolder.demo span i{
+    	color: #FF5E6E;
+  	}
+
+  	.sepSection{
+  		margin-bottom: 50px;
+  	}
+
+  </style>
+</HEAD>
+<BODY>
+	<div class="container main">
+	  	<h1>FFolders<span class='version'>(v1.0.0)</span></h1>
+		<p>
+			Simple, clean and beautiful folders implemented only with CSS.
+			Available in 3 sizes and 5 colors (but customizable of course).<br>
+			Download them and use them (only 4 kb).
+		</p>
+
+
+		<h4>Small/Basic</h4>
+		<div class="ffolder small cyan"></div>	
+		<div class="ffolder small yellow"></div>	
+		<div class="ffolder small pink"></div>	
+		<div class="ffolder small green"></div>	
+		<div class="ffolder small gray"></div>	
+
+
+		<pre>&lt;div class=&quot;ffolder small cyan&quot;&gt;&lt;/div&gt;</pre>
+		<div class="alert alert-success sepSection" role="alert">
+			* classes for available colors: <b>cyan</b>, <b>yellow</b>, <b>pink</b>, <b>green</b> and <b>gray</b>.
+		</div>
+
+
+		<h4>Small/with labels</h4>
+		<div class="ffolder small cyan"><span>24 Files</span></div>	
+		<div class="ffolder small yellow"><span>07 Files</span></div>	
+		<div class="ffolder small pink"><span>37 Files</span></div>
+		<pre class="sepSection">&lt;div class=&quot;ffolder small cyan&quot;&gt;
+    &lt;span&gt;24 Files&lt;/span&gt;
+&lt;/div&gt;</pre>	
+
+
+		<h4>Small/with icons (Font Awesome)</h4>
+		<div class="ffolder small cyan"><i class="fa fa-behance"></i></div>	
+		<div class="ffolder small yellow"><i class="fa fa-stack-overflow"></i></div>	
+		<div class="ffolder small pink"><i class="fa fa-dribbble"></i></div>
+		<pre>&lt;div class=&quot;ffolder small cyan&quot;&gt;
+    &lt;i class=&quot;fa fa-behance&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;</pre>
+		<div class="alert alert-success sepSection" role="alert">
+			* For more information about Font-Awesome icons, visit <a href="https://fortawesome.github.io/Font-Awesome/icons/">Font-Awesome</a>.
+		</div>
+
+		
+		<h4>Medium (Basic/with labels/with icon)</h4>
+		<div class="ffolder medium cyan"></div>	
+		<div class="ffolder medium yellow"><span>07 Files</span></div>	
+		<div class="ffolder medium pink"><span>37 Files</span></div>
+		<div class="ffolder medium gray"><i class="fa fa-dropbox"></i></div>
+		<pre class="sepSection">&lt;div class=&quot;ffolder medium gray&quot;&gt;
+    &lt;i class=&quot;fa fa-dropbox&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;</pre>	
+
+
+		<h4>Big</h4>
+		<div class="ffolder big cyan"><span>24 Files</span></div>	
+		<div class="ffolder big yellow"><span>07 Files</span></div>	
+		<div class="ffolder big pink"><span>37 Files</span></div>	
+		<pre class="sepSection">&lt;div class=&quot;ffolder big pink&quot;&gt;
+    &lt;span&gt;37 Files&lt;/span&gt;
+&lt;/div&gt;</pre>
+
+		<h4>Big/With icons</h4>
+
+		<div class="ffolder big green">
+			<i class="fa fa-android"></i>
+		</div>	
+
+		<div class="ffolder big pink demo">
+			<i class="fa fa-heart"></i>
+		</div>	
+
+		<div class="ffolder big gray">
+			<i class="fa fa-github"></i>
+		</div>
+		<pre class="sepSection">&lt;div class=&quot;ffolder big gray&quot;&gt;
+    &lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;</pre>	
+	
+
+	<hr>
+	<h4>Getting started</h4>
+	<p>
+		<span>
+			<a href="https://github.com/jlizanab/FFolders">
+				<div class="ffolder small gray" style="float:left;"><i class="fa fa-github"></i></div>
+			</a>	
+			Download or clone the project from github:<br>
+			<a href="https://github.com/jlizanab/FFolders">https://github.com/jlizanab/FFolders</a><br>	
+			and add it to your project directly as any bookstore CSS:
+		</span>
+	</p>
+
+	<br>
+	<p>
+	
+	<pre class="sepSection">&lt;!-- Latest compiled and minified CSS --&gt;
+&lt;link href=&quot;css/ffolders.min.css&quot; rel=&quot;stylesheet&quot;&gt;</pre></p>
+
+	
+
+</div>
+
+</BODY>
+</HTML>
+
