@@ -1,0 +1,72 @@
+/* Variables for default colors and sizes */
+$cyan:#23CBF4;
+$yellow:#FFBD00;
+$pink:#FF7F92;
+$green:#62DE82;
+$gray:#829aa8;
+
+$small:88px;
+$medium:176px;
+$big:264px;
+
+
+@mixin ffolder($width, $color) {
+  $radius: floor(($width * 6.82)/100);
+  $tabHeight:floor(($width * 9.1)/100);
+  $tabWidth:floor(($width * 36.5)/100);
+
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: $width;
+  height: floor(($width * 70)/100);
+  background-color: $color;
+  margin-top: $tabHeight;
+  border-radius: 0px $radius $radius $radius;
+
+  &:before{
+    content:'';
+    display: block;
+    position: absolute;
+    top:-$tabHeight;
+    height:$tabHeight; 
+    width:$tabWidth;
+    background-color: darken($color, 5%);
+    border-radius: $radius 0px 0px 0px;
+  }
+
+  &:after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top:-($tabHeight*2); 
+    left: $tabWidth - $tabHeight;
+    border: $tabHeight solid transparent;
+    border-bottom-color: darken($color, 5%);
+  }
+
+  span,i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+  span{
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 15px;
+    white-space: nowrap;
+    color: #FFFFFF;
+    background-color: darken($color, 6%);
+  }
+
+  i{
+    font-size: floor(($width * 42.5)/100);
+    color:darken($color, 6%);
+  }
+}
+
